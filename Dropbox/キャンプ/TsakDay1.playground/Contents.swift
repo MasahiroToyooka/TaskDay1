@@ -122,7 +122,7 @@ calculationB(valueA: 100, valueB: 30)
 // 課題1-7 関数の戻り値
 
 // calculationCを呼び出した結果を格納する変数
-var num = 0
+var num: Int = 0
 
 // valueA と valueB を足した数字を返す関数を定義
 func calculationC(valueA: Int, valueB: Int) -> Int {
@@ -202,7 +202,7 @@ enum User: String {
     case bloodType = "血液型"
 }
 
-let user = User.name
+let user: User = User.name
 
 // userの型に合わせて処理する
 switch user {
@@ -271,7 +271,7 @@ print(valueG.count)
 
 
 // 課題1-17 辞書型
-let valueH = [
+let valueH: [String: Int] = [
     "a": 1,
     "b": 2,
     "c": 3,
