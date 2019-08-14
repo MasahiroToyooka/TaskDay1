@@ -306,13 +306,16 @@ var valueI: [Any?] = [1, "こんにちわ" , "こんばんわ", nil, 3, 100, "�
 // 配列は0から始まるのでvalueIの数 -1
 for i in 0...valueI.count - 1 {
     
+    // nilの時の判断
+    if valueI[i] == nil {
+        print("値はnilです")
+    }
+    
     // valueIをそれぞれの型にダウンキャスティングできるか確認
     if let value: Int = valueI[i] as? Int {
         print("数値は\(value)です。")
     } else if let string = valueI[i] as? String {
         print(string)
-    } else {
-        print("値はnilです。")
     }
 }
 
